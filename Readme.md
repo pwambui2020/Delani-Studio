@@ -1,7 +1,7 @@
 # IP3# Delani-studio 
 ### By **Paulyne Wambui**
 ## description
-Delani studio is that offer picture and video services.
+Delani studio is an amazing platform to explore and put your mind into actions. We are here to do exactly what you want from pictures to videos and everything included.
 ## Setup/Instatllation Requirements 
 * Should have a working github account
 * Push the project to the account
