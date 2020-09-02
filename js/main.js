@@ -1,60 +1,98 @@
+$(document).ready(function(){
+  $(".design-div").click(function(){
+    $(".design-div").slideDown('1000').hide('1000');
+    $(".design-text").show('1000');
+  });
+  $(".design-text").click(function(){
+    $(".design-text").slideUp('1000');
+    $(".design-div").slideDown('1000');
+  });
+});
+
 
 $(document).ready(function(){
-    $("#img1").hover(function(){
-        console.log('any');
-      $("#design-div").toggle(1000);
-    });
+  $(".dev-div").click(function(){
+    $(".dev-div").slideDown('1000').hide('1000');
+    $(".dev-text").show('1000');
   });
-  $(document).ready(function(){
-    $("#img2").hover(function(){
-        console.log('any');
-      $("#development-div").toggle(1000);
-    });
+  $(".dev-text").click(function(){
+    $(".dev-text").slideUp('1000');
+    $(".dev-div").slideDown('1000');
   });
-  $(document).ready(function(){
-    $("#img3").hover(function(){
-        console.log('any');
-      $("#planning-div").toggle(1000);
-    });
- $('#port1').hover(function(){
-     $('.porttext').toggle();
- })
 });
 
 $(document).ready(function(){
-  $("#port1").hover(function(){
-  document.getElementById('porttext1').style.zIndex="1";
+  $(".product-div").click(function(){
+    $(".product-div").slideDown('1000').hide('1000');
+    $(".product-text").show('1000');
+  });
+  $(".product-text").click(function(){
+    $(".product-text").slideUp('1000');
+    $(".product-div").slideDown('1000');
+  });
+});
+
+$(document).ready(function(){
+  $("#div1").mouseover(function(){
+    $(".port-img1").show();
+}).mouseout(function(){
+  $(".port-img1").hide();
   })
-  
-  $("#port2").hover(function(){
-  document.getElementById('porttext2').style.zIndex="1";
+});
+$(document).ready(function(){
+  $("#div2").mouseover(function(){
+    $(".port-img2").show();
+}).mouseout(function(){
+  $(".port-img2").hide();
   })
-
-
-  $("#port3").hover(function(){
-  document.getElementById('porttext3').style.zIndex="1";
+});
+$(document).ready(function(){
+  $("#div3").mouseover(function(){
+    $(".port-img3").show();
+}).mouseout(function(){
+  $(".port-img3").hide();
   })
-
-
-  $("#port4").hover(function(){
-  document.getElementById('porttext4').style.zIndex="1";
+});
+$(document).ready(function(){
+  $("#div4").mouseover(function(){
+    $(".port-img4").show();
+}).mouseout(function(){
+  $(".port-img4").hide();
   })
-
-
-  $("#port5").hover(function(){
-  document.getElementById('porttext5').style.zIndex="1";
+});
+$(document).ready(function(){
+  $("#div5").mouseover(function(){
+    $(".port-img5").show();
+}).mouseout(function(){
+  $(".port-img5").hide();
   })
-
-
-  $("#port6").hover(function(){
-  document.getElementById('porttext6').style.zIndex="1";
+});
+$(document).ready(function(){
+  $("#div6").mouseover(function(){
+    $(".port-img6").show();
+}).mouseout(function(){
+  $(".port-img6").hide();
   })
+});
+$(document).ready(function(){
+  $("#div7").mouseover(function(){
+    $(".port-img7").show();
+}).mouseout(function(){
+  $(".port-img7").hide();
+  })
+});
+$(document).ready(function(){
+  $("#div8").mouseover(function(){
+    $(".port-img8").show();
+}).mouseout(function(){
+  $(".port-img8").hide();
+  })
+});
 
-  $("#port7").hover(function(){
-    document.getElementById('porttext7').style.zIndex="1";
-    })
-
-    $("#port8").hover(function(){
-      document.getElementById('porttext8').style.zIndex="1";
-      })
+$(document).ready(function(){
+  $("#form").submit(function(event){
+      event.preventDefault();
+      var name = $('#MERGE1').val();
+      alert(name +", we have received your message. Thank you for reaching out to us.");
+  })
 });
